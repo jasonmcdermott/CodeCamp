@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <CoreData/CoreData.h>
+#import <CFNetwork/CFNetwork.h>
+#import <Security/Security.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <SpriteKit/SpriteKit.h>
 
 #import "___VARIABLE_classPrefix:identifier___AppDelegate.h"
 #import "___VARIABLE_classPrefix:identifier___ViewController.h"

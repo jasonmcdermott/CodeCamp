@@ -165,6 +165,9 @@
 			<array>
 				<string>SpriteKit</string>
 				<string>AudioToolbox</string>
+				<string>CFNetwork</string>
+				<string>CoreData</string>
+				<string>Security</string>
 			</array>
 		</dict>
 	</array>
