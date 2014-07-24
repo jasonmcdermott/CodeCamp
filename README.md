@@ -3,7 +3,7 @@ CodeCamp
 
 CodeCamp Xcode Template files
 
-Installation
+#### Installation
 
 Check if the following directory exists;
 
