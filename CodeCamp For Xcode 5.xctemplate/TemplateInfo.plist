@@ -49,9 +49,9 @@
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>The {CodeCamp} new app template.</string>
+	<string>For Xcode 5. The {CodeCamp} new app template.</string>
 	<key>Identifier</key>
-	<string>com.apple.dt.unit.singleViewApplicationCC</string>
+	<string>com.apple.dt.unit.singleViewApplicationCC5</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
