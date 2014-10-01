@@ -5,16 +5,9 @@
 	<key>Ancestors</key>
 	<array>
 		<string>com.apple.dt.unit.storyboardApplication</string>
-		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
-	<key>Description</key>
-	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
-	<key>Identifier</key>
-	<string>com.apple.dt.unit.singleViewApplicationCC4</string>
-	<key>Kind</key>
-	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Definitions</key>
 	<dict>
 		<key>ViewController.h</key>
@@ -55,6 +48,22 @@
 			</array>
 		</dict>
 	</dict>
+	<key>Description</key>
+	<string>The {CodeCamp} new app template.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.singleViewApplicationCC</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:5</string>
+		<string>___PACKAGENAME___-Info.plist:UIStatusBarHidden</string>
+		<string>ViewController.h</string>
+		<string>ViewController.m</string>
+		<string>CodeCamp.h</string>
+		<string>CodeCamp.m</string>
+		<string>Constants.h</string>
+	</array>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -62,23 +71,21 @@
 			<string>universalDeviceFamily</string>
 			<key>Units</key>
 			<dict>
-				<key>Universal</key>
+				<key>iPhone</key>
 				<dict>
 					<key>Definitions</key>
 					<dict>
 						<key>Images.xcassets</key>
 						<dict>
 							<key>Path</key>
-							<string>Images-Universal.xcassets</string>
+							<string>Images-iPhone.xcassets</string>
 							<key>SortOrder</key>
 							<integer>100</integer>
 						</dict>
 						<key>Base.lproj/Main.storyboard</key>
 						<dict>
 							<key>Path</key>
-							<string>Main_Universal.storyboard</string>
-							<key>SortOrder</key>
-							<integer>99</integer>
+							<string>Main_iPhone.storyboard</string>
 						</dict>
 					</dict>
 				</dict>
@@ -97,61 +104,36 @@
 						<dict>
 							<key>Path</key>
 							<string>Main_iPad.storyboard</string>
-							<key>SortOrder</key>
-							<integer>99</integer>
 						</dict>
 					</dict>
 				</dict>
-				<key>iPhone</key>
+				<key>Universal</key>
 				<dict>
 					<key>Definitions</key>
 					<dict>
 						<key>Images.xcassets</key>
 						<dict>
 							<key>Path</key>
-							<string>Images-iPhone.xcassets</string>
+							<string>Images-Universal.xcassets</string>
 							<key>SortOrder</key>
 							<integer>100</integer>
+						</dict>
+						<key>Base.lproj/Main_iPhone.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+						</dict>
+						<key>Base.lproj/Main_iPad.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
 						</dict>
 						<key>Base.lproj/Main.storyboard</key>
 						<dict>
 							<key>Path</key>
-							<string>Main_iPhone.storyboard</string>
-							<key>SortOrder</key>
-							<integer>99</integer>
-						</dict>
+							<string>Main.storyboard</string>
+						</dict>						
 					</dict>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>languageChoice</string>
-			<key>Units</key>
-			<dict>
-				<key>Objective-C</key>
-				<dict>
-					<key>Nodes</key>
-					<array>
-						<string>ViewController.h</string>
-						<string>ViewController.m</string>
-						<string>CodeCamp.h</string>
-						<string>CodeCamp.m</string>
-						<string>Constants.h</string>
-					</array>
-				</dict>
-				<key>Swift</key>
-				<dict>
-					<key>Nodes</key>
-					<array>
-						<string>ViewController.swift:comments</string>
-						<string>ViewController.swift:imports:importCocoa</string>
-						<string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
-						<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
-						<string>ViewController.swift:implementation:methods:viewDidLoad:super</string>
-						<string>ViewController.swift:implementation:methods:didReceiveMemoryWarning(override func didReceiveMemoryWarning(\))</string>
-						<string>ViewController.swift:implementation:methods:didReceiveMemoryWarning:super</string>
-					</array>
 				</dict>
 			</dict>
 		</dict>
@@ -194,7 +176,5 @@
 			</array>
 		</dict>
 	</array>
-	<key>SortOrder</key>
-	<integer>1</integer>
 </dict>
 </plist>

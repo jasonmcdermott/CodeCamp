@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "size" : "29x29",
+      "scale" : "2x",
+      "filename" : "CCAppIcon_29x29@2x.png"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "40x40",
+      "scale" : "2x",
+      "filename" : "CCAppIcon_40x40@2x.png"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "60x60",
+      "scale" : "2x",
+      "filename" : "CCAppIcon_60x60@2x.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
