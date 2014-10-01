@@ -14,9 +14,9 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <SpriteKit/SpriteKit.h>
 
-#import "___VARIABLE_classPrefix:identifier___AppDelegate.h"
-#import "___VARIABLE_classPrefix:identifier___ViewController.h"
-#import "___VARIABLE_classPrefix:identifier___Constants.h"
+#import "AppDelegate.h"
+#import "ViewController.h"
+#import "Constants.h"
 
 @interface CodeCamp : NSObject
 

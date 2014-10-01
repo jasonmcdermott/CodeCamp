@@ -6,9 +6,9 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___VARIABLE_classPrefix:identifier___ViewController.h"
+#import "ViewController.h"
 
-@interface ___VARIABLE_classPrefix:identifier___ViewController ()
+@interface ViewController ()
 {
     // add variables below this line
     
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ___VARIABLE_classPrefix:identifier___ViewController
+@implementation ViewController
 
 - (void)viewDidLoad
 {
@@ -36,4 +36,4 @@
 
 
 
-@end
+@end // <-- don't delete this line!

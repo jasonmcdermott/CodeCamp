@@ -8,8 +8,8 @@
 
 #pragma once
 
-#ifndef ___VARIABLE_classPrefix:identifier___Constants
-#define ___VARIABLE_classPrefix:identifier___Constants
+#ifndef Constants
+#define Constants
 
 // waiting for some constants
 

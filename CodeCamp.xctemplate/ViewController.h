@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 
-#import "___VARIABLE_classPrefix:identifier___AppDelegate.h"
+#import "AppDelegate.h"
 #import "CodeCamp.h"
 
-@interface ___VARIABLE_classPrefix:identifier___ViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end

@@ -47,7 +47,7 @@
 
 + (void)addToRunningScore:(int)score
 {
-    int currentScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"runningScore"] integerValue];
+    int currentScore = (int)[[[NSUserDefaults standardUserDefaults] objectForKey:@"runningScore"] integerValue];
     score += currentScore;
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:score] forKey:@"runningScore"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -106,8 +106,8 @@
 
 + (void)setViewColor:(UIColor *)color
 {
-    CCAppDelegate *appDelegate = (CCAppDelegate *)[[UIApplication sharedApplication] delegate];
-    CCViewController *mainController = (CCViewController *) appDelegate.window.rootViewController;
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    ViewController *mainController = (ViewController *) appDelegate.window.rootViewController;
     mainController.view.backgroundColor = color;
 }
 
