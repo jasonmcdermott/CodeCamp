@@ -10,7 +10,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>For Xcode 6. This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
+	<string>For Xcode 6. The {CodeCamp} new app template.</string>
 	<key>Identifier</key>
 	<string>com.apple.dt.unit.singleViewApplicationCC6</string>
 	<key>Kind</key>
