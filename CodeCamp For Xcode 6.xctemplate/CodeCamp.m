@@ -12,6 +12,13 @@
 
 #pragma mark - NSUserDefaults
 
++ (void)setHighScore:(int)score
+{
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:score] forKey:@"highScore"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"Saved high score: %d",score);
+}
+
 + (int)getHighScore
 {
     int highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"highScore"] intValue];
@@ -26,12 +33,56 @@
     return score;
 }
 
-+ (void)saveHighScore:(int)score
++ (void)setPlayerCharacter:(NSString *)character
 {
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:score] forKey:@"highScore"];
+    [[NSUserDefaults standardUserDefaults] setObject:character forKey:@"character"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    NSLog(@"Saved high score: %d",score);
+}
+
++ (NSString *)getPlayerCharacter
+{
+    NSString *character = [[NSUserDefaults standardUserDefaults] objectForKey:@"character"];
+    NSLog(@"Selected character is: %@",character);
+    return character;
+}
+
++ (void)setInt:(int)val forProperty:(NSString*)property
+{
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:val] forKey:property];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"Set %@ to %d",property,val);
+}
+
++ (void)setFloat:(float)val forProperty:(NSString*)property
+{
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:val] forKey:property];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"Set %@ to %f",property,val);
+}
+
++ (void)setString:(NSString*)val forProperty:(NSString*)property
+{
+    [[NSUserDefaults standardUserDefaults] setObject:val forKey:property];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"Set %@ to %@",property,val);
+}
+
++ (int)getIntForProperty:(NSString *)property
+{
+    int val = [[[NSUserDefaults standardUserDefaults] objectForKey:property] intValue];
+    return val;
+}
+
++ (float)getFloatForProperty:(NSString *)property
+{
+    float val = [[[NSUserDefaults standardUserDefaults] objectForKey:property] floatValue];
+    return val;
+}
+
++ (NSString *)getStringForProperty:(NSString *)property
+{
+    NSString *val = [[NSUserDefaults standardUserDefaults] objectForKey:property];
+    return val;
 }
 
 + (void)incrementLaunchCount
@@ -106,8 +157,8 @@
 
 + (void)setViewColor:(UIColor *)color
 {
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    ViewController *mainController = (ViewController *) appDelegate.window.rootViewController;
+    CCAppDelegate *appDelegate = (CCAppDelegate *)[[UIApplication sharedApplication] delegate];
+    CCViewController *mainController = (CCViewController *) appDelegate.window.rootViewController;
     mainController.view.backgroundColor = color;
 }
 

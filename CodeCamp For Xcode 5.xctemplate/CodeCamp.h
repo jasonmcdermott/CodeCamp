@@ -21,12 +21,18 @@
 @interface CodeCamp : NSObject
 
 #pragma mark - NSUserDefaults
-+ (void)saveHighScore:(int)score;
++ (void)setHighScore:(int)score;
 + (int)getHighScore;
 + (NSString *)getHighScoreString;
-
++ (void)setPlayerCharacter:(NSString *)character;
++ (NSString *)getPlayerCharacter;
++ (void)setInt:(int)val forProperty:(NSString*)property;
++ (void)setFloat:(float)val forProperty:(NSString*)property;
++ (void)setString:(NSString*)string forProperty:(NSString*)property;
++ (int)getIntForProperty:(NSString*)property;
++ (float)getFloatForProperty:(NSString*)property;
++ (NSString *)getStringForProperty:(NSString*)property;
 + (void)incrementLaunchCount;
-
 + (void)addToRunningScore:(int)score;
 + (int)getRunningScore;
 + (NSString *)getRunningScoreString;
