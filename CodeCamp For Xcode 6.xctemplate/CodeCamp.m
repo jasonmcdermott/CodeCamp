@@ -1,9 +1,9 @@
 //
-//  ___FILENAME___
-//  ___PACKAGENAME___
+//  CodeCamp.m
+//  alert
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Created by codeCamp on 2/10/2014.
+//  Copyright (c) 2014 codeCamp. All rights reserved.
 //
 
 #import "CodeCamp.h"
@@ -160,6 +160,16 @@
     CCAppDelegate *appDelegate = (CCAppDelegate *)[[UIApplication sharedApplication] delegate];
     CCViewController *mainController = (CCViewController *) appDelegate.window.rootViewController;
     mainController.view.backgroundColor = color;
+}
+
++ (void)showAlertWithTitle:(NSString *)title andMessage:(NSString*)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 #pragma mark - Math

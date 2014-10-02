@@ -1,9 +1,9 @@
 //
-//  ___FILENAME___
-//  ___PACKAGENAME___
+//  CodeCamp.h
+//  alert
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Created by codeCamp on 2/10/2014.
+//  Copyright (c) 2014 codeCamp. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,9 +14,9 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <SpriteKit/SpriteKit.h>
 
-#import "___VARIABLE_classPrefix:identifier___AppDelegate.h"
-#import "___VARIABLE_classPrefix:identifier___ViewController.h"
-#import "___VARIABLE_classPrefix:identifier___Constants.h"
+#import "CCAppDelegate.h"
+#import "CCViewController.h"
+#import "CCConstants.h"
 
 @interface CodeCamp : NSObject
 
@@ -48,6 +48,7 @@
 + (void)hideButton:(UIButton *)button;
 + (void)showButton:(UIButton *)button;
 + (void)setViewColor:(UIColor *)color;
++ (void)showAlertWithTitle:(NSString *)title andMessage:(NSString*)message;
 
 #pragma mark - Device
 + (void)allowSleep;
@@ -57,8 +58,8 @@
 + (BOOL)checkIfOnIpad;
 
 /* don't forget to send 'references' not 'pointers.
-    e.g. [CodeCamp createSoundFromFileNamed:@"filename" withSoundID:&(sound)];
-*/
+ e.g. [CodeCamp createSoundFromFileNamed:@"filename" withSoundID:&(sound)];
+ */
 + (void)createSoundFromFileNamed:(NSString*)filename withSoundID:(SystemSoundID*)ID;
 
 + (void)playSound:(SystemSoundID*)ID;
