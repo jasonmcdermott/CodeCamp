@@ -15,6 +15,9 @@
 #import <SpriteKit/SpriteKit.h>
 
 #import "Constants.h"
+#import "AppDelegate.h"
+#import "ViewController.h"
+
 
 @interface CodeCamp : NSObject
 
