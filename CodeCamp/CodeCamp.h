@@ -14,9 +14,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <SpriteKit/SpriteKit.h>
 
-#import "CCAppDelegate.h"
-#import "CCViewController.h"
-#import "CCConstants.h"
+#import "Constants.h"
 
 @interface CodeCamp : NSObject
 

@@ -23,7 +23,7 @@
 		<key>CodeCamp.h</key>
 		<dict>
 			<key>Path</key>
-			<string>CodeCamp.h</string>
+			<string>../CodeCamp/CodeCamp.h</string>
 			<key>Group</key>
 				<array>
 				<string>CodeCamp Helpers</string>
@@ -32,7 +32,7 @@
 		<key>CodeCamp.m</key>
 		<dict>
 			<key>Path</key>
-			<string>CodeCamp.m</string>
+			<string>../CodeCamp/CodeCamp.m</string>
 			<key>Group</key>
 				<array>
 				<string>CodeCamp Helpers</string>
